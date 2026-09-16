@@ -1,4 +1,4 @@
-[![Stand with Ukraine](ukraine-banner.svg)](https://ukraine.ua)
+[![Stand with Ukraine](standwithukrainebannerimg.png)](https://ukraine.ua)
 
 # Stand With Ukraine Banners
 
