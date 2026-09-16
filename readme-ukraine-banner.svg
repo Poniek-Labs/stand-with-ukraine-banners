@@ -1,70 +1,35 @@
-<svg fill="none" viewBox="0 0 800 52" width="100%" height="52" xmlns="http://w3.org">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://w3.org">
-      <style>
-        .ukraine-banner {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background-color: #1a1a1a;
-          color: #ffffff;
-          padding: 15px 20px;
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-          font-size: 14px;
-          text-align: center;
-          border-bottom: 2px solid #ffd700;
-          box-sizing: border-box;
-          height: 52px;
-        }
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 800 52" width="100%" height="52">
+  <!-- Background Dark Bar -->
+  <rect width="100%" height="50" fill="#1a1a1a"/>
+  
+  <!-- Yellow Bottom Border Line -->
+  <rect y="50" width="100%" height="2" fill="#ffd700"/>
 
-        .ukraine-flag {
-          display: flex;
-          flex-direction: column;
-          width: 24px;
-          height: 16px;
-          margin-right: 12px;
-          border-radius: 2px;
-          overflow: hidden;
-          box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-          flex-shrink: 0;
-        }
+  <!-- Centered Content Container Group -->
+  <!-- Adjust the 'transform' X value if you need to manually re-center text lengths -->
+  <g transform="translate(240, 17)">
+    <!-- Ukraine Flag Image -->
+    <g>
+      <!-- Flag Background/Shadow Effect Box -->
+      <rect width="24" height="16" rx="2" fill="#000000" opacity="0.3" transform="translate(0, 1)"/>
+      <g clip-path="url(#flag-clip)">
+        <!-- Blue Top Half -->
+        <rect width="24" height="8" fill="#0057b7"/>
+        <!-- Yellow Bottom Half -->
+        <rect y="8" width="24" height="8" fill="#ffd700"/>
+      </g>
+    </g>
 
-        .ukraine-blue {
-          background-color: #0057b7;
-          flex: 1;
-        }
+    <!-- Banner Text Content -->
+    <text x="36" y="13" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14px">
+      We stand with <tspan font-weight="bold">Ukraine</tspan>. <tspan fill="#ffd700" font-weight="600" text-decoration="underline">Learn how you can help</tspan>
+    </text>
+  </g>
 
-        .ukraine-yellow {
-          background-color: #ffd700;
-          flex: 1;
-        }
-
-        .ukraine-text {
-          margin: 0;
-          line-height: 1.4;
-        }
-
-        .ukraine-text strong {
-          font-weight: 700;
-        }
-
-        .ukraine-link {
-          color: #ffd700;
-          text-decoration: underline;
-          font-weight: 600;
-          margin-left: 5px;
-        }
-      </style>
-      
-      <div class="ukraine-banner">
-        <div class="ukraine-flag">
-          <div class="ukraine-blue"></div>
-          <div class="ukraine-yellow"></div>
-        </div>
-        <p class="ukraine-text">
-          We stand with <strong>Ukraine</strong>. <span class="ukraine-link">Learn how you can help</span>
-        </p>
-      </div>
-    </div>
-  </foreignObject>
+  <!-- Flag Corner Radius Clip Configuration -->
+  <defs>
+    <clipPath id="flag-clip">
+      <rect width="24" height="16" rx="2"/>
+    </clipPath>
+  </defs>
 </svg>
